@@ -113,7 +113,7 @@
                                     {{#with team_leader}}
                                     {{title}}: {{name}}
                                     <br>
-                                    Email: {{email}}
+                                    Email: <a href="{{name}}">{{email}}</a>
                                     {{/with}}
                                 </div>
                                 <br>
@@ -122,7 +122,7 @@
                                     {{#each team_members}}
                                     {{title}}: {{name}}
                                     <br>
-                                    Email: {{email}}
+                                    Email: <a href="{{name}}">{{email}}</a>
                                     <br>
                                     Skills: {{skills}}
                                     <br>
