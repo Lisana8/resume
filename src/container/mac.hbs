@@ -1,0 +1,206 @@
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">{{category}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
+        </ol>
+    </nav>
+    <hr>
+
+    <div>
+        <h2><span class="badge text-bg-info">{{name}} | {{price}}$</span></h2>
+        <em>{{description}}</em>
+    </div>
+    <hr>
+
+    <h4><span class="badge text-bg-secondary">Features:</span></h4>
+    <br>
+</div>
+
+
+{{#with features}}
+<div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <b>Processor</b>
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                brand: {{processor.brand}}<br>
+                model: {{processor.model}}<br>
+                speed: {{processor.speed}}<br>
+                cores: {{processor.cores}}<br>
+                cache: {{processor.cache}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>Memory</b>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                type: {{memory.type}}<br>
+                size: {{memory.size}}<br>
+                speed: {{memory.speed}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>Storage</b>
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                type: {{storage.type}}<br>
+                size: {{storage.size}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <b>Display</b>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                size: {{display.size}}<br>
+                resolution: {{display.resolution}}<br>
+                technology: {{display.technology}}<br>
+                color_space: {{display.color_space}}<br>
+                brightness: {{display.brightness}}<br>
+                refresh_rate: {{display.size}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <b>Graphics</b>
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                brand: {{graphics.brand}}<br>
+                model: {{graphics.model}}<br>
+                memory: {{graphics.memory}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <b>Ports</b>
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                    <li>
+                        type: {{ports.[0].type}}<br>
+                        count: {{ports.[0].count}}<br>
+                        features:
+                        <ul>
+                            {{#each ports.[0].features}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                    <li>
+                        type: {{ports.[1].type}}<br>
+                        count: {{ports.[1].count}}<br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <b>Battery</b>
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                type: {{battery.type}}<br>
+                capacity: {{battery.capacity}}<br>
+                life: {{battery.life}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <b>Other</b>
+            </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                weight: {{weight}}<br><br>
+                Dimensions <br>
+                height: {{dimensions.height}}<br>
+                width: {{dimensions.width}}<br>
+                depth: {{dimensions.depth}}<br><br>
+                operating_system: {{operating_system}}<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <b>Accessories</b>
+            </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                    <li>
+                        {{accessories.[0].name}} | {{accessories.[0].price}}$<br>
+                    </li>
+                    <li>
+                        {{accessories.[1].name}} | {{accessories.[1].price}}$<br>
+                    </li>
+                    <li>
+                        {{accessories.[2].name}} | {{accessories.[2].price}}$<br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {{/with}}
+
+</div>
