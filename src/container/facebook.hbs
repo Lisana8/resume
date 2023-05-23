@@ -1,0 +1,234 @@
+<div>
+    <h2><span class="badge rounded-pill text-bg-primary">{{name}}</span></h2>
+</div>
+
+<div class="card text-bg-light mb-3" style="max-width: 30rem;">
+    <h5 class="card-header">User</h5>
+    <div class="card-body">
+        <b>
+            id: {{users.[0].id}}<br>
+            name: {{users.[0].name}}<br>
+            gender: {{users.[0].gender}}<br>
+            age: {{users.[0].age}}
+        </b>
+        <br>
+        <hr>
+
+        <div>
+            <button type="button" class="btn btn-primary">
+                Friends<span class="badge text-bg-secondary">2</span>
+            </button>
+            <ol>
+                <li>
+                    id: {{users.[0].friends.[0].id}}<br>
+                    name: {{users.[0].friends.[0].name}}<br>
+                    gender: {{users.[0].friends.[0].gender}}<br>
+                    age: {{users.[0].friends.[0].age}}<br><br>
+
+                    <button type="button" class="btn btn-secondary">
+                        mutual_friends<span class="badge text-bg-secondary">1</span>
+                    </button>
+                    <ul>
+                        <li>
+                            id: {{users.[0].friends.[0].mutual_friends.[0].id}}<br>
+                            name: {{users.[0].friends.[0].mutual_friends.[0].name}}<br>
+                            gender: {{users.[0].friends.[0].mutual_friends.[0].gender}}<br>
+                            age: {{users.[0].friends.[0].mutual_friends.[0].age}}<br><br>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    id: {{users.[0].friends.[1].id}}<br>
+                    name: {{users.[0].friends.[1].name}}<br>
+                    gender: {{users.[0].friends.[1].gender}}<br>
+                    age: {{users.[0].friends.[1].age}}<br><br>
+
+                    <button type="button" class="btn btn-secondary">
+                        mutual_friends<span class="badge text-bg-secondary">1</span>
+                    </button>
+                    <ul>
+                        <li>
+                            id: {{users.[0].friends.[1].mutual_friends.[0].id}}<br>
+                            name: {{users.[0].friends.[1].mutual_friends.[0].name}}<br>
+                            gender: {{users.[0].friends.[1].mutual_friends.[0].gender}}<br>
+                            age: {{users.[0].friends.[1].mutual_friends.[0].age}}<br><br>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary">
+                Groups<span class="badge text-bg-secondary">2</span>
+            </button>
+            <ol>
+                <li>
+                    id: {{users.[0].groups.[0].id}}<br>
+                    name: {{users.[0].groups.[0].name}}<br>
+                    description: {{users.[0].groups.[0].description}}
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-secondary">
+                        members<span class="badge text-bg-secondary">1</span>
+                    </button>
+                    <br>
+                    id: {{users.[0].groups.[0].members.[0].id}}<br>
+                    name: {{users.[0].groups.[0].members.[0].name}}<br>
+                    gender: {{users.[0].groups.[0].members.[0].gender}}<br>
+                    age: {{users.[0].groups.[0].members.[0].age}}<br><br>
+                </li>
+
+                <li>
+                    id: {{users.[0].groups.[1].id}}<br>
+                    name: {{users.[0].groups.[1].name}}<br>
+                    description: {{users.[0].groups.[1].description}}
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-secondary">
+                        members<span class="badge text-bg-secondary">2</span>
+                    </button>
+                    <br>
+
+                    <ul>
+                        <li>
+                            id: {{users.[0].groups.[1].members.[0].id}}<br>
+                            name: {{users.[0].groups.[1].members.[0].name}}<br>
+                            gender: {{users.[0].groups.[1].members.[0].gender}}<br>
+                            age: {{users.[0].groups.[1].members.[0].age}}<br><br>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            id: {{users.[0].groups.[1].members.[1].id}}<br>
+                            name: {{users.[0].groups.[1].members.[1].name}}<br>
+                            gender: {{users.[0].groups.[1].members.[1].gender}}<br>
+                            age: {{users.[0].groups.[1].members.[1].age}}<br><br>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ol>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="card text-bg-light mb-3" style="max-width: 30rem;">
+    <h5 class="card-header">User</h5>
+    <div class="card-body">
+        <b>
+            id: {{users.[1].id}}<br>
+            name: {{users.[1].name}}<br>
+            gender: {{users.[1].gender}}<br>
+            age: {{users.[1].age}}
+        </b>
+        <br>
+        <hr>
+
+        <div>
+            <button type="button" class="btn btn-primary">
+                Friends<span class="badge text-bg-secondary">1</span>
+            </button>
+            <ol>
+                <li>
+                    id: {{users.[1].friends.[0].id}}<br>
+                    name: {{users.[1].friends.[0].name}}<br>
+                    gender: {{users.[1].friends.[0].gender}}<br>
+                    age: {{users.[1].friends.[0].age}}<br><br>
+
+                    <button type="button" class="btn btn-secondary">
+                        mutual_friends<span class="badge text-bg-secondary">2</span>
+                    </button>
+                    <ul>
+                        <li>
+                            id: {{users.[1].friends.[0].mutual_friends.[0].id}}<br>
+                            name: {{users.[1].friends.[0].mutual_friends.[0].name}}<br>
+                            gender: {{users.[1].friends.[0].mutual_friends.[0].gender}}<br>
+                            age: {{users.[1].friends.[0].mutual_friends.[0].age}}<br><br>
+                        </li>
+
+                        <li>
+                            id: {{users.[1].friends.[0].mutual_friends.[1].id}}<br>
+                            name: {{users.[1].friends.[0].mutual_friends.[1].name}}<br>
+                            gender: {{users.[1].friends.[0].mutual_friends.[1].gender}}<br>
+                            age: {{users.[1].friends.[0].mutual_friends.[1].age}}<br><br>
+
+                            <button type="button" class="btn btn-secondary">
+                                mutual_friends<span class="badge text-bg-secondary">1</span>
+                            </button>
+                            <br>
+
+                            id: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].id}}<br>
+                            name: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].name}}<br>
+                            gender: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].gender}}<br>
+                            age: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].age}}<br><br>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary">
+                Groups<span class="badge text-bg-secondary">2</span>
+            </button>
+            <ol>
+                <li>
+                    id: {{users.[1].friends.[0].groups.[0].id}}<br>
+                    name: {{users.[1].friends.[0].groups.[0].name}}<br>
+                    description: {{users.[1].friends.[0].groups.[0].description}}
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-secondary">
+                        members<span class="badge text-bg-secondary">1</span>
+                    </button>
+                    <br>
+                    id: {{users.[1].friends.[0].groups.[0].members.[0].id}}<br>
+                    name: {{users.[1].friends.[0].groups.[0].members.[0].name}}<br>
+                    gender: {{users.[1].friends.[0].groups.[0].members.[0].gender}}<br>
+                    age: {{users.[1].friends.[0].groups.[0].members.[0].age}}<br><br>
+                </li>
+
+                <li>
+                    id: {{users.[1].friends.[0].groups.[1].id}}<br>
+                    name: {{users.[1].friends.[0].groups.[1].name}}<br>
+                    description: {{users.[1].friends.[0].groups.[1].description}}
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-secondary">
+                        members<span class="badge text-bg-secondary">2</span>
+                    </button>
+                    <br>
+
+                    <ul>
+                        <li>
+                            id: {{users.[1].friends.[0].groups.[1].members.[0].id}}<br>
+                            name: {{users.[1].friends.[0].groups.[1].members.[0].name}}<br>
+                            gender: {{users.[1].friends.[0].groups.[1].members.[0].gender}}<br>
+                            age: {{users.[1].friends.[0].groups.[1].members.[0].age}}<br><br>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            id: {{users.[1].friends.[0].groups.[1].members.[1].id}}<br>
+                            name: {{users.[1].friends.[0].groups.[1].members.[1].name}}<br>
+                            gender: {{users.[1].friends.[0].groups.[1].members.[1].gender}}<br>
+                            age: {{users.[1].friends.[0].groups.[1].members.[1].age}}<br><br>
+                        </li>
+                    </ul>
+
+                </li>
+            </ol>
+        </div>
+
+    </div>
+</div>
