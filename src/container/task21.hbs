@@ -13,88 +13,88 @@
                     <br>
                     <button type="button" class="btn btn-outline-primary">{{heading.main.button_text.outline}}</button>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h2>{{heading.second.title}}</h2>
-                        <div class="text-muted">{{heading.second.text}}</div>
-                        <br>
-                        <button type="button" class="btn btn-secondary">{{heading.second.button_text.solid}}</button>
-                        <br>
-                        <br>
-                        <button type="button"
-                            class="btn btn-outline-secondary">{{heading.second.button_text.outline}}</button>
-                    </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2>{{heading.second.title}}</h2>
+                    <div class="text-muted">{{heading.second.text}}</div>
+                    <br>
+                    <button type="button" class="btn btn-secondary">{{heading.second.button_text.solid}}</button>
+                    <br>
+                    <br>
+                    <button type="button"
+                        class="btn btn-outline-secondary">{{heading.second.button_text.outline}}</button>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h3>{{heading.subblock.title}}</h3>
-                        <div class="text-muted">{{heading.subblock.text}}</div>
-                        <br>
-                        <button type="button" class="btn btn-dark">{{heading.subblock.button_text.solid}}</button>
-                        <br>
-                        <br>
-                        <button type="button"
-                            class="btn btn-outline-dark">{{heading.subblock.button_text.outline}}</button>
-                    </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{heading.subblock.title}}</h3>
+                    <div class="text-muted">{{heading.subblock.text}}</div>
+                    <br>
+                    <button type="button" class="btn btn-dark">{{heading.subblock.button_text.solid}}</button>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-outline-dark">{{heading.subblock.button_text.outline}}</button>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-
-        <div class="card">
-            <div class="card-body">
-                <div class="display-1">{{nested_display.title}}</div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="display-4">{{nested_display.children_display.title}}</div>
-                        <br>
-                        <div class="text-muted">{{nested_display.children_display.text}}</div>
-                        <br>
-                        <button type="button"
-                            class="btn btn-outline-warning">{{nested_display.children_display.button.text}}</button>
-                        <br>
-                    </div>
-                </div>
-                <br>
-                <h6>{{nested_display.header_text}}</h6>
-                <button type="button" class="btn btn-info">{{nested_display.button.text}}</button>
-            </div>
-        </div>
-        <br>
-        <br>
-
-        <div class="card">
-            <div class="card-body">
-                <div class="text-uppercase">{{paragraph.title}}</div>
-                <br>
-                <div class="text-lowercase">{{paragraph.text}}</div>
-                <br>
-                <a class="btn btn-link" href="{{paragraph.button.url}}" target="_blank">
-                    {{paragraph.button.text}}
-                </a>
-                <br>
-
-                <div class="card">
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                <a class="btn btn-link" href="{{paragraph.list_name.[0].url}}" target="_blank"></a>
-                                {{paragraph.list_name.[0].text}}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-link" href="{{paragraph.list_name.[1].url}}" target="_blank">
-                                    {{paragraph.list_name.[1].text}}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </div>
+    <br>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="display-1">{{nested_display.title}}</div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="display-4">{{nested_display.children_display.title}}</div>
+                    <br>
+                    <div class="text-muted">{{nested_display.children_display.text}}</div>
+                    <br>
+                    <button type="button"
+                        class="btn btn-outline-warning">{{nested_display.children_display.button.text}}</button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <h6>{{nested_display.header_text}}</h6>
+            <button type="button" class="btn btn-info">{{nested_display.button.text}}</button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="text-uppercase">{{paragraph.title}}</div>
+            <br>
+            <div class="text-lowercase">{{paragraph.text}}</div>
+            <br>
+            <a class="btn btn-link" href="{{paragraph.button.url}}" target="_blank">
+                {{paragraph.button.text}}
+            </a>
+            <br>
+
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <a class="btn btn-link" href="{{paragraph.list_name.[0].url}}" target="_blank"></a>
+                            {{paragraph.list_name.[0].text}}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link" href="{{paragraph.list_name.[1].url}}" target="_blank">
+                                {{paragraph.list_name.[1].text}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
